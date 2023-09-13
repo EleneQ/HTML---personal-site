@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- a declaration that tells the browser which version of HTML this document is written in. html5 here. -->
+<html lang="en">
+<!-- lang="en" tells the browser that the content in here is targeted at english speakers. important for assistive technologies / screen readers so that they can look at the lang attribute and read the content correctly -->
+
+<head>
+  <!--the user won't see on the page the things in here, non-content stuff-->
+  <meta charset="UTF-8" />
+  <!--tells the browser to ensured that the characters on the page are rendered correctly. some charsets don't allow emojies to render, for example-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--tells the browser how the website should be displayed relative to the screen it's being rendered on. basically, tells the browser how the website should look when it 1st opens-->
+  <title>Title💚</title>
+  <!--googled the emoji and just copy pasted it-->
+</head>
+
+<body>
+  <!-- here goes the conent of a website. embedded/nested inside the html tag-->
+  <table cellspacing="20px">
+    <!--here we're using a table to configure the layount of the site, which is wrong. this is how it used to be done, but now that's done with CSS-->
+    <tbody>
+      <tr>
+        <td>
+          <img src="images/human.png" alt="an image of me" />
+          <!--the images/ is a path to ge to the photo. the alt is good for both search engine optimization and accessibility-->
+        </td>
+        <td>
+          <h1>Elene Qaldani</h1>
+          <p>I am <em>learning</em></p>
+          <p><strong>Warning!</strong> I am doing <a href="#">stuff</a></p>
+          <!--the # points to the currect page itself-->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr />
+  <h3>Books and teaching</h3>
+  <ul>
+    <li>book 1</li>
+    <li>book 2</li>
+  </ul>
+  <hr>
+  <h3>Work Experience table</h3>
+  <table border="1px">
+    <!--red because that attribute shouldn't be in the HTML file because it has to do with the styling-->
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2013-9000</td>
+        <td>I did freelancing</td>
+      </tr>
+      <tr>
+        <td>2011</td>
+        <td>I worked at lulu lemon marketing</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--
+      <tfoot>
+      </tfoot>
+      -->
+  <hr>
+  <h3>Skills Table</h3>
+  <table border="1px" cellspacing="10px">
+    <!--this table is devided into 2 tds that both contain tables with 2 rows. in this table, we're using HTML to affect the layount, which is wrong. one of the reasons for it being wrong is that the table now looks confusing-->
+    <tr>
+      <td>
+        <table>
+          <tbody>
+            <tr>
+              <td>Skill 1</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>skill 2</td>
+              <td>⭐</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tbody>
+            <tr>
+              <td>Skill 1</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>skill 3</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <hr>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="contact-me.html">Contact Me</a>
+</body>
+
+</html>
+
+<!-- this is called the HTML boilerplate
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+  </head>
+
+  <body>
+    <h1>Hello</h1>
+  </body>
+</html>
+-->
